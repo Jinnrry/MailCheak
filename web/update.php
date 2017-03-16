@@ -7,7 +7,7 @@ include'PhpImap/IncomingMail.php';
 include'mysqli.php';
 set_time_limit(0);
 // 4. argument is the directory into which attachments are to be saved:
-$mailbox = new PhpImap\Mailbox('{imap.qq.com:993/imap/ssl}INBOX', 'ok@xjiangwei.cn', 'renwvnswlfotbgch', __DIR__);
+$mailbox = new PhpImap\Mailbox('{imap.qq.com:993/imap/ssl}INBOX', 'ok@xjiangwei.cn', '********', __DIR__);
 
 // Read all messaged into an array:
 $mailsIds = $mailbox->searchMailbox('ALL');
